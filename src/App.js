@@ -1,6 +1,14 @@
+import FormularioCadastro from './components/FormularioCadastro.jsx';
+import ListaDeNotas from './components/ListaDeNotas.jsx'
+
 function App() {
   return (
-    <h1>meu app</h1>
+    <section>
+      <FormularioCadastro/>
+      <ListaDeNotas/>
+    </section>
+        
+
   );
 }
 
