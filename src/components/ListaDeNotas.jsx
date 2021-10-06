@@ -1,20 +1,19 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import { Component } from 'react'
+import CardNota from './CardNota';
 
-export default class ListaDeNotas extends Component { 
+class ListaDeNotas extends Component { 
     render(){
-        return (<ul>
+        return (
+        <ul>
             <li>
-                <section>
-                    <header>
-                        <h3>Título</h3>
-                    </header>
-                    <p>Escreva sua nota</p>
-                </section>
+                <CardNota/>
             </li>
         </ul>
         )
     }
 
 }
+
+export default ListaDeNotas;

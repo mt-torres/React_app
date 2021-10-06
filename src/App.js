@@ -1,15 +1,19 @@
+import { Component } from 'react';
 import FormularioCadastro from './components/FormularioCadastro.jsx';
 import ListaDeNotas from './components/ListaDeNotas.jsx'
 
-function App() {
-  return (
-    <section>
-      <FormularioCadastro/>
-      <ListaDeNotas/>
-    </section>
-        
+class App extends Component() {
+  render(){
+    return (
+      <section>
+        <FormularioCadastro/>
+        <ListaDeNotas/>
+      </section>
+  
+    );
 
-  );
+  }
+ 
 }
 
 export default App;
