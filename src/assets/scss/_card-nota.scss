@@ -1,0 +1,22 @@
+.card-nota{
+    background-color: $fundo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    
+
+    &__titulo{
+        padding: .4rem;
+        font-family:'Chakra Petch' ;
+        border-bottom: 1px solid $bordas;
+    }
+
+    &__nota{
+        padding: .4rem;
+        font-family: 'Kaushan Script';
+        justify-self: flex-start;
+    }
+    
+    
+}

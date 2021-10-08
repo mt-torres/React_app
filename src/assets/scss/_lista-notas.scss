@@ -1,0 +1,16 @@
+.lista-nota{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
+
+    &__lista{
+        list-style-type: none;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        width: 20%;
+        border-radius: 20px;
+
+    }
+
+}

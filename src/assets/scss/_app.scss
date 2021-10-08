@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+
+    
+
+    &__formulario-cadastro{
+        width: 30%;
+        border-right: 1px solid $bordas;
+    }
+
+    &__lista-notas{
+        width: 70%;
+    }
+
+    
+}

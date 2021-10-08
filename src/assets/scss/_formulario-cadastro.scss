@@ -1,0 +1,39 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    &__input{
+        height: 20px;
+        font-family:"Chakra Petch";
+        @include formulario-cadastro(); 
+
+    }
+
+    &__nota{
+        height: 100px;
+        font-family: "Kaushan Script";
+        white-space: 1rem;
+        letter-spacing: .15rem;
+        @include formulario-cadastro(); 
+    }
+
+    &__botao{
+        font-family:"Chakra Petch";
+        background-color: $bordas;
+        color: white;
+        border:none;
+        border-radius: 3px;
+        margin-left: auto;
+        width: 30%;
+        cursor: pointer;
+        transition: all linear .2s;
+
+        &:hover{
+            background-color: rgb(107, 105, 105);;
+        
+        }
+    }
+
+
+}

@@ -1,0 +1,15 @@
+$fundo:rgb(209, 205, 205);
+$bordas:rgb(153, 149, 149);
+
+
+@mixin formulario-cadastro {
+    margin-bottom: .3rem;
+    background-color: $fundo;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding-left: .4rem;
+    outline: none;
+}
+
+@import 'card-nota', 'formulario-cadastro','app','lista-notas';
