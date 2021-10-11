@@ -4,16 +4,31 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .card-nota__titulo {
-  padding: 0.4rem;
-  font-family: "Chakra Petch";
+  padding-right: 1rem;
   border-bottom: 1px solid #999595;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.card-nota__titulo__texto {
+  margin-left: 0.5rem;
+}
+.card-nota__titulo__delete {
+  transition: all linear 0.15s;
+  cursor: pointer;
+}
+.card-nota__titulo__delete:hover {
+  transform: scale(1.2);
 }
 .card-nota__nota {
-  padding: 0.4rem;
+  margin: 1rem;
+  word-wrap: break-word;
   font-family: "Kaushan Script";
-  justify-self: flex-start;
+  width: 90%;
 }
 
 .cadastro {
