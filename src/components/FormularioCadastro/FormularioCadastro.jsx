@@ -38,15 +38,24 @@ class FormularioCadastro extends Component {
             >
 
                 <input 
-                className='cadastro__input' 
-                type='text' 
-                placeholder="Título"
-                onChange={this._handleMudancaTitulo.bind(this)}
+                    className='cadastro__input' 
+                    type='text' 
+                    placeholder="Título"
+                    onChange={this._handleMudancaTitulo.bind(this)}
                 />
+                <select 
+                    className="cadastro__categorias">
+                        {this.props.categorias.map((categoria, indice)=>{
+                            return <option key={indice} value="">{categoria}</option>
+
+                        })}
+                        
+
+                </select>
                 <textarea 
-                className='cadastro__nota'
-                placeholder="Escreva sua nota..."
-                onChange={this._handleMudancaTexto.bind(this)}
+                    className='cadastro__nota'
+                    placeholder="Escreva sua nota..."
+                    onChange={this._handleMudancaTexto.bind(this)}
                 />
                 <button className='cadastro__botao'>
                     Criar nota

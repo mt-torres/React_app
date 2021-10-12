@@ -104,7 +104,7 @@
   opacity: 1;
 }
 .lista-nota__lista--deletada {
-  width: 0;
+  width: 0px;
   opacity: 0;
 }
 
@@ -126,7 +126,7 @@
   font-size: 0.8rem;
 }
 .lista-categoria__input {
-  width: 200px;
+  width: 184px;
   background-color: #6e566e;
   border: none;
   padding: 0.5rem 1rem;

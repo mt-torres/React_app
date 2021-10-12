@@ -5,8 +5,15 @@ import { Component } from 'react';
 class CardNota extends Component {
     apagar(evento){
         const alvo = evento.target.closest('.lista-nota__lista');
+        console.log(alvo);
         alvo.classList.add('lista-nota__lista--deletada');
-        this.props.apagaNota(this.props.indice);
+        alvo.style.transition ='all 0.6s ease-out';
+        setTimeout(()=>{
+              
+            this.props.apagaNota(this.props.indice); 
+            alvo.classList.remove('lista-nota__lista--deletada');
+            alvo.style.transition ='all 0.0s ease-out';
+        },600)
 
         
            
