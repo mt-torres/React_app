@@ -24,8 +24,7 @@ class FormularioCadastro extends Component {
         this.props.criarNota(this.titulo, this.texto);
         setTimeout(() => {
             const el = evento.target.parentNode.nextSibling.lastChild.lastElementChild;
-        console.log(el)
-            el.classList.add('lista-nota__lista--nova')
+            el.classList.add('lista-nota__lista--criada')
 
         }, 1);
         

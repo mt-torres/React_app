@@ -1,4 +1,5 @@
 $fundo:#6e566e;
+$fundo-gradiente:#2c022c;
 $bordas:rgb(153, 149, 149);
 
 
@@ -12,4 +13,4 @@ $bordas:rgb(153, 149, 149);
     outline: none;
 }
 
-@import 'card-nota', 'formulario-cadastro','app','lista-notas';
+@import 'card-nota', 'formulario-cadastro','app','lista-notas','Lista-categorias';

@@ -3,9 +3,14 @@ import React from 'react';
 import { Component } from 'react';
 
 class CardNota extends Component {
-    apagar(){
-        const indice = this.props.index;
-        this.props.apagarNota(indice);
+    apagar(evento){
+        const alvo = evento.target.closest('.lista-nota__lista');
+        alvo.classList.add('lista-nota__lista--deletada');
+        this.props.apagaNota(this.props.indice);
+
+        
+           
+     
     }
 
     render() {

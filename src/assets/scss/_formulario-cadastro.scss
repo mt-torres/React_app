@@ -19,7 +19,7 @@
     }
 
     &__botao{
-        background-color: $bordas;
+        background-color: $fundo;
         color: white;
         border:none;
         border-radius: 3px;
@@ -29,7 +29,8 @@
         transition: all linear .2s;
 
         &:hover{
-            background-color: rgb(107, 105, 105);;
+            background-color: $fundo-gradiente;
+            transform: scale(1.2);
         
         }
     }

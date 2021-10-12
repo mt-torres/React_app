@@ -1,5 +1,5 @@
-import React from 'react'
-import { Component } from 'react'
+import React from 'react';
+import { Component } from 'react';
 import CardNota from '../CardNota';
 
 class ListaDeNotas extends Component { 
@@ -10,13 +10,13 @@ class ListaDeNotas extends Component {
                 return(
                     <li 
                     className='lista-nota__lista' 
-                    key= {index}>
-                
+                    key= {index}
+                    >
                         <CardNota 
                         indice ={index}
                         titulo={nota.titulo} 
                         texto={nota.texto}
-                        apagarNota={this.props.apagarNota} 
+                        apagaNota={this.props.apagaNota} 
                         />
                     </li>
 

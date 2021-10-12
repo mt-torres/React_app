@@ -60,7 +60,7 @@
   outline: none;
 }
 .cadastro__botao {
-  background-color: #999595;
+  background-color: #6e566e;
   color: white;
   border: none;
   border-radius: 3px;
@@ -70,7 +70,8 @@
   transition: all linear 0.2s;
 }
 .cadastro__botao:hover {
-  background-color: #6b6969;
+  background-color: #2c022c;
+  transform: scale(1.2);
 }
 
 .main {
@@ -98,9 +99,39 @@
   opacity: 0;
   transition: all 0.6s ease-out;
 }
-.lista-nota__lista--nova {
+.lista-nota__lista--criada {
   width: 23%;
   opacity: 1;
+}
+.lista-nota__lista--deletada {
+  width: 0;
+  opacity: 0;
+}
+
+.lista-categoria {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+.lista-categoria__listas {
+  display: flex;
+  margin-left: 1rem;
+}
+.lista-categoria__listas__item {
+  margin-right: 1rem;
+  padding: 0.7rem;
+  background: linear-gradient(#2c022c, #6e566e);
+  border-radius: 30px;
+  color: white;
+  font-size: 0.8rem;
+}
+.lista-categoria__input {
+  width: 200px;
+  background-color: #6e566e;
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
