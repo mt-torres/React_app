@@ -2,15 +2,8 @@ import React from "react";
 import { Component } from 'react';
 
 class ListaDeCategorias extends Component {
- /*    constructor(props){
-        super(props);
-        this.categoria= '';
-    }
- */
-
     _handleEventoInput(evento){
         if(evento.key === 'Enter'){
-            
             this.props.adicionarCategoria(evento.target.value);
             evento.target.value ='';
 

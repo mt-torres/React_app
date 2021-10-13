@@ -7,21 +7,29 @@ class FormularioCadastro extends Component {
         super(props);
         this.titulo ='';
         this.texto ='';
+        this.categorias ='';
     }
 
     _handleMudancaTitulo (evento){
-        this.titulo = evento.target.value;
         evento.stopPropagation();
+        this.titulo = evento.target.value;
         
     }
     _handleMudancaTexto (evento){
-        this.texto = evento.target.value;
         evento.stopPropagation();
+        this.texto = evento.target.value;
+        
+    }
+
+    _handleMudancaCategoria (evento){
+        evento.stopPropagation();
+        console.log(evento.target.value)
+        this.categorias = evento.target.value;
         
     }
     _criarNota(evento){
         evento.preventDefault();
-        this.props.criarNota(this.titulo, this.texto);
+        this.props.criarNota(this.titulo, this.texto, this.categorias);
         setTimeout(() => {
             const el = evento.target.parentNode.nextSibling.lastChild.lastElementChild;
             el.classList.add('lista-nota__lista--criada')
@@ -44,13 +52,14 @@ class FormularioCadastro extends Component {
                     onChange={this._handleMudancaTitulo.bind(this)}
                 />
                 <select 
-                    className="cadastro__categorias">
+                    onChange={this._handleMudancaCategoria.bind(this)}
+                    className="cadastro__categorias"
+                    >
+                        <option >Sem categoria</option>
                         {this.props.categorias.map((categoria, indice)=>{
-                            return <option key={indice} value="">{categoria}</option>
+                            return <option key={indice}>{categoria}</option>
 
                         })}
-                        
-
                 </select>
                 <textarea 
                     className='cadastro__nota'

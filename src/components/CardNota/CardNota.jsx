@@ -13,10 +13,7 @@ class CardNota extends Component {
             this.props.apagaNota(this.props.indice); 
             alvo.classList.remove('lista-nota__lista--deletada');
             alvo.style.transition ='all 0.0s ease-out';
-        },600)
-
-        
-           
+        },600)     
      
     }
 
@@ -25,14 +22,17 @@ class CardNota extends Component {
             <section className="card-nota">
                 <header className='card-nota__titulo'>
                     <h3 
-                    className="card-nota__titulo__texto">{this.props.titulo}
+                        className="card-nota__titulo__texto">{this.props.titulo}
                     </h3>
                     <DeleteSVG 
-                    className='card-nota__titulo__delete'  
-                    onClick={this.apagar.bind(this)}/>
+                        className='card-nota__titulo__delete'  
+                        onClick={this.apagar.bind(this)}
+                    />
+                    <div>{this.props.categorias}</div>
+
                 </header>
                 <p 
-                className="card-nota__nota">{this.props.texto}
+                    className="card-nota__nota">{this.props.texto}
                 </p>
             </section>
         )
