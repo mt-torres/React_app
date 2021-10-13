@@ -8,36 +8,47 @@
     box-sizing: border-box;
 
     &__titulo{
-        padding-right:1rem ;
         border-bottom: 1px solid $bordas;
         width: 90%;
         display: flex;
         align-items: center;
+      
 
         &__texto{
             margin-left: .5rem;
+            width: 60%;
 
         }
 
         &__delete{
             transition: all linear .15s;
             cursor: pointer;
+            width: 20%;
 
             &:hover{
                 transform: scale(1.2)
             }
         }
 
+        &__categoria{
+            @include categoria-tag;
+            font-size: .6rem;
+            width: 30%;
+            text-align: center;
+        }
+        
     }
+    
 
     &__nota{
         margin: 1rem;
         word-wrap: break-word;
         font-family: 'Kaushan Script';
-        width: 90%;
-        
-               
+        width: 90%;   
+         
     }
+
     
+
     
 }

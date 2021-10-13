@@ -7,7 +7,7 @@ class FormularioCadastro extends Component {
         super(props);
         this.titulo ='';
         this.texto ='';
-        this.categorias ='';
+        this.categorias ='Sem categoria';
     }
 
     _handleMudancaTitulo (evento){
@@ -52,8 +52,8 @@ class FormularioCadastro extends Component {
                     onChange={this._handleMudancaTitulo.bind(this)}
                 />
                 <select 
-                    onChange={this._handleMudancaCategoria.bind(this)}
                     className="cadastro__categorias"
+                    onChange={this._handleMudancaCategoria.bind(this)}
                     >
                         <option >Sem categoria</option>
                         {this.props.categorias.map((categoria, indice)=>{

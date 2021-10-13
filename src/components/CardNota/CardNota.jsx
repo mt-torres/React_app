@@ -28,7 +28,7 @@ class CardNota extends Component {
                         className='card-nota__titulo__delete'  
                         onClick={this.apagar.bind(this)}
                     />
-                    <div>{this.props.categorias}</div>
+                    <h3 className='card-nota__titulo__categoria'>{this.props.categorias}</h3>
 
                 </header>
                 <p 

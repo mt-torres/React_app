@@ -13,4 +13,12 @@ $bordas:rgb(153, 149, 149);
     outline: none;
 }
 
+@mixin categoria-tag {
+    padding: .7rem;
+    background: linear-gradient($fundo-gradiente, $fundo);
+    border-radius: 30px;
+    color: white;
+    
+}
+
 @import 'card-nota', 'formulario-cadastro','app','lista-notas','Lista-categorias';

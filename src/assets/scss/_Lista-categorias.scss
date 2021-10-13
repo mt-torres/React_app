@@ -8,14 +8,9 @@
         margin-left: 1rem;
         
         &__item{
-            margin-right: 1rem;
-            padding: .7rem;
-            background: linear-gradient($fundo-gradiente, $fundo);
-            border-radius: 30px;
-            color: white;
+            @include categoria-tag; 
+             margin-right: 1rem;
             font-size: .8rem;
-
-          
         }
     }
     
