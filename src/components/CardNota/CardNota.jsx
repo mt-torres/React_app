@@ -5,7 +5,6 @@ import { Component } from 'react';
 class CardNota extends Component {
     apagar(evento){
         const alvo = evento.target.closest('.lista-nota__lista');
-        console.log(alvo);
         alvo.classList.add('lista-nota__lista--deletada');
         alvo.style.transition ='all 0.6s ease-out';
         setTimeout(()=>{
