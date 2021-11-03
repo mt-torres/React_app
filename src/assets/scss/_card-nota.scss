@@ -1,11 +1,13 @@
 .card-nota{
     background-color: #b458b3;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    width: 100%;
     box-sizing: border-box;
+    height: 100%;
+    
 
     &__titulo{
         border-bottom: 1px solid $bordas;
@@ -21,12 +23,12 @@
         }
 
         &__delete{
-            transition: all linear .15s;
+            transition: all linear .5s;
             cursor: pointer;
             width: 20%;
 
             &:hover{
-                transform: scale(1.2)
+                transform: rotate3d(0,10,1,180deg);
             }
         }
 
@@ -47,8 +49,6 @@
         width: 90%;   
          
     }
-
-    
-
     
 }
+

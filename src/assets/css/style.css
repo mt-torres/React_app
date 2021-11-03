@@ -1,11 +1,12 @@
 .card-nota {
   background-color: #b458b3;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  width: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 .card-nota__titulo {
   border-bottom: 1px solid #999595;
@@ -18,12 +19,12 @@
   width: 60%;
 }
 .card-nota__titulo__delete {
-  transition: all linear 0.15s;
+  transition: all linear 0.5s;
   cursor: pointer;
   width: 20%;
 }
 .card-nota__titulo__delete:hover {
-  transform: scale(1.2);
+  transform: rotate3d(0, 10, 1, 180deg);
 }
 .card-nota__titulo__categoria {
   padding: 0.7rem;
@@ -107,16 +108,30 @@
 .lista-nota {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  margin-left: 1rem;
 }
 .lista-nota__lista {
-  list-style-type: none;
-  margin-left: 1rem;
   margin-bottom: 1rem;
   border-radius: 20px;
   width: 0;
+  height: 120px;
   opacity: 0;
   transition: all 0.6s ease-out;
+  box-shadow: -2rem 0 3rem #000;
+  position: relative;
+  /* &:hover:nth-child(6n+1){
+
+      transform:  translateX(85px);
+      z-index: 10;
+      box-shadow: +2rem 0 3rem  #000;
+  } */
+}
+.lista-nota__lista:hover {
+  /* transform: translateY(-1rem); */
+  transform: translateY(-1rem) translateX(-85px);
+}
+.lista-nota__lista:not(:nth-child(6n+1)) {
+  margin-left: -85px;
 }
 .lista-nota__lista--criada {
   width: 23%;
